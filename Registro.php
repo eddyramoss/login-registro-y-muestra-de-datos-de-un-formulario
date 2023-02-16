@@ -20,6 +20,7 @@
 	}
 </script>
 
+
 <body>
 	<nav>
 		<h1>Registrate</h1>

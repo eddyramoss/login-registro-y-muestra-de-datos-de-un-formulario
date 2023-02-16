@@ -14,3 +14,8 @@
 
     /**validamos los datos y la conexion */
     $validacion = mysqli_query($conexion, $registro);
+
+    /**una vez resgistrado con el header nos mandara directo al login para que
+     * iniciemos secion con los nuevos datos
+     */
+    header('location:login.php');
