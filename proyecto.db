@@ -1,0 +1,19 @@
+/* creamos la base de datos con el nombre de login
+    posteriormente creamos dos tablas una llamada contactos
+    y  la otra usuario la tabla contactos tendra 5 columnas 
+    como ser 
+    id_usuario.- el cual sera autoincrementable
+    nombre
+    usuario
+    correo 
+    peticion 
+    
+    luego creamo la tabla usuario el cual tendra 5 columnas 
+    esta tabla sera la mas importante ya que aqui añadiremos 
+    los usuarios y registro en el formulario y estos mismos se guardaran 
+    en la base de datos. las columnas que tendran son  
+    id_usuaio que sera auto incrementable
+    nombre 
+    usuario 
+    contraseña 
+    corre*/
