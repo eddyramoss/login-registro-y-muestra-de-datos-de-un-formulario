@@ -1,0 +1,153 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.contenedor{
+    
+    background: #071013;
+    width: 100%;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(3,lfr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "nav nav nav"
+                         "header header header"
+                         "imagen section section"
+                         "imagen2 article article "
+                         "footer footer footer";
+                         box-sizing: border-box;
+
+}
+
+nav{
+    background: red;
+    height: 100px;
+    grid-area: nav;
+}
+ul{
+    padding-top: 35px ;
+    margin-right: 20px;
+    margin-left: 50%;
+     text-align: right;
+}
+li{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+    margin-right:20px ;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+header{
+
+    height: 600px;
+    background: url("../img_sobre_nosotros/article.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    /*el atatachment esa para que se ponga estatica el rato de bajar */
+    background-attachment: fixed;
+    text-align: center;
+    grid-area: header;
+}
+h1{
+
+    padding-top: 200px;
+    font-size: 100px;
+    color: blueviolet;
+}
+.imagen{
+    margin-left: 20px;
+}
+.imagen2{
+    margin-left: 20px;
+}
+.imagen3{
+    
+    width: 100%;
+    height: 100%;
+    grid-area: imagen;
+}
+.imagen4{
+    
+    width: 100%;
+    height: 100%;
+    grid-area: imagen2;
+}
+section{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    grid-area: section;
+    color: white;
+    border-bottom: 3px yellow  solid;
+}
+h2{
+    color: chartreuse;
+    padding-top: 90px;
+    
+    text-align: center;
+}
+
+article{
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-area: article;
+    color: white;
+}
+.final{
+    padding: 0px;
+}
+footer{
+    border-top: 2px yellow solid;
+    clear: both;
+    color: yellow;
+    grid-area: footer;
+    font-size: 30px;
+}
+
+@media  screen and (max-width: 768px) {
+
+    .contenedor{
+        grid-template-areas: "nav nav nav"
+        "header header header"
+        "section section section"
+        "imagen2 article article "
+        "footer footer footer";
+    }
+    
+}
+
+li:hover{
+    color: wheat;
+   background: rgb(32, 52, 229);
+    border-radius: 13px;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+/*dama efecto al color de la letra cuando acercamos el cursor*/
+a:hover{
+    color: white;
+}
+
+p{
+    animation-duration: 2s;
+    animation-name: corrido;
+}
+
+@keyframes corrido{
+
+    from{
+        margin-left: 100%;
+        width: 0%;
+    }
+
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}

@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.contenedor{
+    background: #071013;
+    color: black;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,lfr);
+    grid-template-rows: repeat(4, auto) ;
+    grid-template-areas: 
+    "header header  header"
+    "h1 h1 h1"
+    "table  table table";
+}
+
+header{
+    grid-area: header;
+    height: 100px;
+    background: #EB5160;
+}
+ul{
+    margin: 35px;
+     text-align: right;
+}
+li{
+
+    font-weight: bold;
+    display: inline-block;
+    margin-right:20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+h1{
+    text-align: center;
+    grid-area: h1;
+    color: wheat;
+}
+table{
+    font-weight: bolder;
+    grid-area: table;
+    margin: 2% 10%;
+    background: coral;
+    text-align: center;
+}
+td{
+    width: 200px;
+    height: 10px;
+    margin: 5px;
+    border: black 1px solid;
+
+}
+
+/*dama efecto de agrandar a la opcion al aceracarnos con el mouse*/
+li:hover{
+    color: wheat;
+   background: rgb(32, 52, 229);
+    border-radius: 13px;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+a:hover{
+    color: white;
+}
+
+table{
+    animation-duration: 5s;
+    animation-name: tabla;
+}
+
+@keyframes tabla{
+    from{
+        opacity: 0.2;
+    }
+    to{
+        opacity: none;
+    }
+}
+
+h1{
+    animation-duration: 5s;
+    animation-name: h;
+}
+
+@keyframes h{
+    from{
+        opacity: 0.2;
+    }
+    to{
+        opacity: none;
+    }
+}
